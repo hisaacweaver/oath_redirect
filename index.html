@@ -1,0 +1,9 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Returning to Rocket Monkey…</title>
+<p>Returning to Rocket Monkey on your computer… If nothing happens, open <a href="http://localhost:5173/">http://localhost:5173/</a> and start the connection again.</p>
+<script>
+  // Plaid sends the browser here after a bank's OAuth sign-in. Forward everything (including oauth_state_id)
+  // to the local app. This page holds no secrets and talks to no server.
+  location.replace('http://localhost:5173/' + location.search);
+</script>
